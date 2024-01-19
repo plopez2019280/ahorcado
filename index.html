@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="back">
+            <div class="menu container">
+
+                <a class="logo">Portafolio</a>
+                <input type="checkbox" id="menu" />
+                <label for="menu">
+                    <img src="img/menu.png" class="menu-icono" alt="">
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="sobremi.html" target="_blank">Sobre mi</a></li>
+                        <li><a href="proyectos.html" target="_blank">Proyectos</a></li>
+                        <li><a href="tecnos.html" target="_blank">Tecnologias que manejo</a></li>
+                        <li><a href="multimedia.html" target="_blank">Multimedia</a></li>
+                    </ul>
+                </nav>
+            </div> 
+
+        </div>
+        <section id="seccion1">
+            <h2>Contactame</h2>
+            <p>Escribime para casaquear.</p>
+            
+            <form action="javascript:void(0);" onsubmit="enviarFormulario()">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <button id="botonEnviar">Enviar Datos</button>
+            </form>
+        </section>
+
+        <script>
+            function enviarFormulario() {
+                document.getElementById('botonEnviar').setAttribute('disabled', 'true');
+                document.querySelector('form').classList.add('cargando');
+                window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' ;
+            }
+        </script>
+
+    </header>
+    
+</body>
+</html>
