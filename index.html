@@ -4,18 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles.css" </head>
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Promesas</title>
+</head>
 
 <body>
-    <div class="containter">
-        <form id="miformulario">
+    <div class="container">
+        <form id="miFormulario">
             <label for="nombre">Nombre:</label>
-            <input type="text" required>
+            <input type="text" id="nombre" required>
             <button type="button" onclick="enviarDatos()">Enviar</button>
         </form>
         <p id="mensaje" class="oculto"></p>
     </div>
-    <script src="./assets/logica.js"></script>
+    <script src="./assets/logicaAsincrona.js"></script>
 </body>
 
 </html>
